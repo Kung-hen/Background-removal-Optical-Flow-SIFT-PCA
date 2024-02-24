@@ -53,8 +53,7 @@ https://github.com/Kung-hen/Background-removal-Optical-Flow-SIFT-PCA-/assets/956
 </div>
 
 
-* 2.2 Feature tracking : 
-  
+* 2.2 Feature tracking :
     * Track the point (detected in 2.1) on the whole video using OpenCV function `cv2.calcOpticalFlowPyrLK`.
     * Display the trajectory of the tracking point throughout the video using cv2.line. 
 
@@ -62,7 +61,7 @@ https://github.com/Kung-hen/Background-removal-Optical-Flow-SIFT-PCA-/assets/956
     
 3.SIFT
 
-* 3.1 Keypoints
+* 3.1 Keypoints :
    * Load image 1 [Shark1.jpg](main/Figures/Q3_Image/Shark1.jpg)  
    * Based on SIFT algorithm, find  keypoints on traffics.png.
    * Use OpenCV SIFT detector to detect keypoints and descriptors.
@@ -84,9 +83,24 @@ https://github.com/Kung-hen/Background-removal-Optical-Flow-SIFT-PCA-/assets/956
 <img src="Figures/3.2_result.png" width="600">
 </div>
 
-
-* 3.3 Find Wrap Images
+* 3.3 Find Wrap Images :
        
 <div align = center>
 <img src="Figures/3.3_result.png" width="600">
+</div>
+
+4. PCA -Dimension Reduction
+
+* 4.1 Dimension Reduction
+  
+   * Using PCA (Principal components analysis) to do dimension reduction on given image [memecat.jpg](Figures/meme_cat.jpeg) and find the minimum components that reconstruction error less or equal to 3.0
+   * Convert RGB image to gray scale image.
+   * Normalize gray scale image from [0,255] to [0,1].
+   * Use PCA to do dimension reduction from min(w,h) to n, then reconstruct the image.
+   * Use MSE to compute reconstruction error, and find minimum n that error value less or equal to 3.0.
+   * Plot the gray scale image and the reconstruction image with n components. 
+
+
+<div align = center>
+<img src="Figures/4.1_result.png" width="600">
 </div>
