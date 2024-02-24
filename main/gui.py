@@ -274,7 +274,7 @@ class Ui_Form(object):
         self.pushButton_10.setText(_translate("Form", "Find Wrap Images"))
         self.pushButton_12.setText(_translate("Form", "Dimension Reduction"))
         self.label_3.setText(_translate("Form", "3. SIFT"))
-        self.label_4.setText(_translate("Form", "3. PCA"))
+        self.label_4.setText(_translate("Form", "4. PCA"))
         self.pushButton_16.setText(_translate("Form", "Background Subtraction"))
         self.label_5.setText(_translate("Form", "1. Background Subtraction"))
 
