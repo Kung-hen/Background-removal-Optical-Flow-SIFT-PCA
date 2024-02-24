@@ -41,7 +41,7 @@
 https://github.com/Kung-hen/Background-removal-Optical-Flow-SIFT-PCA-/assets/95673520/5d9195bd-b5a8-4541-b375-59088ed5d04b
 
 
-1.Optical Flow
+2.Optical Flow
 
 * 2.1 Data Preprocessing :
     * Use Opencv function `cv2.goodFeaturesToTrack` to detect corner automatically.
