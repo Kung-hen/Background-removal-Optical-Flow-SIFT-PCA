@@ -63,20 +63,30 @@ https://github.com/Kung-hen/Background-removal-Optical-Flow-SIFT-PCA-/assets/956
 3.SIFT
 
 * 3.1 Keypoints
-   * Apply gaussian filter k x k to input image1.
-   * filter kernel equation = (k=2m+1)
+   * Load image 1 [Shark1.jpg](main/Figures/Q3_Image/Shark1.jpg)  
+   * Based on SIFT algorithm, find  keypoints on traffics.png.
+   * Use OpenCV SIFT detector to detect keypoints and descriptors.
+   * Use `sift = cv.SIFT_create()` create a SIFT detector,`sift.detectAndCompute(image,None)`
+   * Then use `cv2.drawMatchesKnn ` save and draw the keypoints.
+
+<div align = center>
+<img src="Figures/3.1_result.png" width="600">
+</div>
 
 
-* 3.2 Match Keypoints
-   * Define: Bilateral magnitude 0 ~ 10, sigmaColor = 90 and sigmaSpace = 90. 
-   * Apply Bilateral filter k x k to input image1.
-   * filter kernel equation = (k=2m+1)
-     
+* 3.2 Match Keypoints :
+   * Load Image 1 [Shark1.jpg](main/Figures/Q3_Image/Shark1.jpg) and Image 2 [Shark2.jpg](main/Figures/Q3_Image/Shark2.jpg)
+   * Based on SIFT algorithm, find the keypoints and descriptors at Image 1 and Image 2 (same as question 3.1) and match the most related between descriptors 1 and descriptors 2.
+   * Use OpencCV `DescriptorMatcher.knnMatch(descriptors 1, descriptors 2)` to locate the matched keypoints.
+   * Save and draw the matched feature points between two image.
+          
+<div align = center>
+<img src="Figures/3.2_result.png" width="600">
+</div>
 
 
-* 2.3 Median fliter
-   * Define: Median magnitude 0 ~ 10.
-   * Apply Median filter k x k to input image1.
-   * filter kernel equation = (k=2m+1)
-
-https://github.com/Kung-hen/Image-processing-and-smooth/assets/95673520/89c4e7a8-0f73-4c8e-bc3d-8f68de7a81d5
+* 3.3 Find Wrap Images
+       
+<div align = center>
+<img src="Figures/3.3_result.png" width="600">
+</div>
